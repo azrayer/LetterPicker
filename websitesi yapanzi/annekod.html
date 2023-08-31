@@ -1,0 +1,28 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bir Harf Seç</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bir Harf Seç</h1>
+    </header>
+    <main>
+        <div class="input-container">
+            <label for="inputCount">Seçenek Sayısı:</label>
+            <input type="number" id="inputCount" min="1" max="10">
+            <button class="add-button" onclick="generateInputs()">Ekle</button>
+        </div>
+        <div id="inputs"></div>
+        <button class="generate-button" onclick="generateReport()">Rapor Hazırla</button>
+        <div id="report" class="report-container"></div>
+        <div id="chart-container" class="chart-container"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
